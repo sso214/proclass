@@ -132,16 +132,16 @@ header {
     margin-bottom: 99px;
   }
 
-  .logo {
-    height: 38px;
-    margin-top: 20px;
-  }
-
   h2 {
     font-size: 45px;
     font-weight: 700;
     line-height: 140%;
     letter-spacing: -0.9px;
+  }
+
+  .logo {
+    height: 38px;
+    margin-top: 20px;
   }
 
   .arrow {
@@ -153,11 +153,12 @@ header {
 }
 
 #cont02 {
-  padding: 80px 50px;
+  padding: 80px 11%;
 
   .top {
     position: relative;
     width: max-content;
+    max-width: 100%;
     padding: 35px 35px 40px;
     margin-bottom: 60px;
 
@@ -213,7 +214,7 @@ header {
 #cont03 {
   h2 {
     margin-bottom: 15px;
-    padding: 80px 50px 15px;
+    padding: 80px 11% 15px;
 
     text-align: center;
     font-size: 34px;
@@ -234,18 +235,18 @@ header {
 
   .mockup {
     position: relative;
-    height: 566px;
+    width: 100%;
     margin: 30px auto;
 
     & > img {
-      height: 100%;
+      width: 100%;
     }
 
     .cont04Swiper {
       position: absolute;
-      top: 10.5%;
-      left: 25.8%;
-      width: 44.6%;
+      top: 12%;
+      left: 14%;
+      width: 66%;
       height: 75%;
       border-radius: 4px;
       background: #000;
@@ -288,21 +289,22 @@ header {
 
   .cardList li {
     h4 {
-      padding: 60px 0 0 40px;
+      padding: 60px 0 0 9.5%;
       margin-bottom: 40px;
     }
 
     &:nth-child(1) img {
-      height:297px;
+      max-width: 270px;
+      width: 80%;
       display: block;
       margin: 0 auto;
     }
 
     &:nth-child(2) img {
-      height: 200px;
+      width: 83%;
       display: block;
       margin-left: auto;
-      margin-bottom: 66px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -317,7 +319,7 @@ header {
   }
 
   .cardList {
-    padding: 60px 35px 0 35px;
+    padding: 60px 0 0;
     gap: 0;
     background: #2A2D44;
     border-radius: 20px;
@@ -327,8 +329,8 @@ header {
     }
 
     h5 {
+      margin: 0 35px 20px;
       padding: 2px 14px;
-      margin-bottom: 20px;
 
       display: inline-flex;
       justify-content: center;
@@ -348,6 +350,7 @@ header {
     }
 
     p {
+      padding: 0 35px;
       margin-bottom: 20px;
 
       color: #C4C4DA;
@@ -368,7 +371,7 @@ header {
 
     .gift {
       height: 56px;
-      margin-bottom: 20px;
+      margin: 0 35px 20px;
     }
 
     h4 {
@@ -380,22 +383,25 @@ header {
     }
 
     li {
+      padding: 60px 0 0;
       background: #273047;
 
+      h4 {
+        padding: 0 35px;
+      }
+
       &:nth-child(1) {
-        padding: 60px 35px 0 35px;
         h4 {
           margin-bottom: 20px;
         }
       }
 
       &:nth-child(2) {
-        padding: 60px 35px 0;
         h4 {
           margin-bottom: 40px;
         }
         img {
-          height: 397px;
+          width: 62%;
           display: block;
           margin: 0 auto;
         }
@@ -412,7 +418,7 @@ header {
     margin-top: 40px;
 
     h4 {
-      padding: 60px 0 0 40px;
+      padding: 60px 9.5% 0;
     }
 
     li {
@@ -423,13 +429,13 @@ header {
         img {
           display: block;
           margin: 55px auto 60px;
-          width: calc(100% - 60px);
+          width:85.7%;
         }
       }
 
       &:nth-child(2) {
         img {
-          height: 417px;
+          width:66.6%;
           display: block;
           margin: 40px auto 0;
         }
@@ -438,7 +444,7 @@ header {
       &:nth-child(3) {
         padding: 0;
         img {
-          width: 345px;
+          width:82.14%;
           display: block;
           margin: 40px 0 0 auto;
         }
@@ -456,9 +462,11 @@ header {
 }
 
 #cont08 {
+  width: 100%;
   padding: 120px 28px 40px;
 
   .chat {
+    width: 100%;
     margin: 57px 0;
     display: flex;
     align-items: flex-start;
@@ -523,7 +531,8 @@ header {
           color: #6877FB;
         }
         img {
-          height: 267px;
+          max-width: 270px;
+          width: 100%;
           display: block;
           margin: 40px auto 0;
         }
@@ -539,7 +548,8 @@ header {
           color: #A87AF3;
         }
         img {
-          height: 307px;
+          max-width: 300px;
+          width: 100%;
           display: block;
           margin: 40px auto 0;
         }
@@ -589,10 +599,14 @@ header {
   }
 
   .cardList li {
-    padding: 60px 0 0 40px;
+    padding: 60px 0 0;
+
+    h4 {
+      padding: 0 0 0 9.5%;
+    }
 
     img {
-      height: 347px;
+      width: 90%;
       margin: 40px 0 40px auto;
       display: block;
     }
@@ -605,7 +619,8 @@ header {
   text-align: center;
 
   img {
-    height: 105px;
+    max-width: 305px;
+    width: 90%;
     margin-bottom: 30px;
   }
 
@@ -636,24 +651,32 @@ header {
 .phone {
   position: relative;
   width: 100%;
-  height: 566px;
-  margin: 30px auto;
-  background: url("../public/image/phone.png") no-repeat center;
-  background-size: contain;
+  text-align: center;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 
   & > div {
     position: absolute;
-    top: 7.7%;
-    left: 17%;
-    width: 61%;
-    height: 81%;
-    border-radius: 31px;
+    top: 7%;
+    left: 13.5%;
+    width: 67.5%;
+    height: 82%;
+    border-radius: 45px;
     overflow: hidden;
   }
 }
 
 .titleBox {
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   div {
     display: flex;
@@ -741,5 +764,60 @@ header {
 @media (max-width: 640px) {
   #right {
     width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .pc_br {
+    display: none;
+  }
+
+  #cont01 {
+    padding: 130px 0;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .arrow {
+      height: 10px;
+    }
+  }
+
+  #cont02 {
+    .top {
+      font-size: 30px;
+    }
+  }
+
+  #cont04 {
+    .cardList li {
+      h4 {
+        padding: 60px 9.5% 0;
+      }
+    }
+  }
+
+  #cont07 {
+    .cardList {
+      li {
+        &:nth-child(1) {
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  #cont09 {
+    .cardList li {
+      h4 {
+        padding: 0 9.5%;
+      }
+    }
   }
 }

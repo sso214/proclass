@@ -47,9 +47,9 @@ function App() {
 
         <div id='cont02'>
           <div className='top' data-aos="fade-up" data-aos-delay="1500">
-            스마트폰📱으로<br />
-            💬 회의도 하고<br />
-            🪪 명함도 보내는데<br />
+            스마트폰📱으로 <br className='pc_br' />
+            💬 회의도 하고 <br className='pc_br' />
+            🪪 명함도 보내는데 <br className='pc_br' />
             교육은 왜 못할까? 🤔
           </div>
 
@@ -59,8 +59,8 @@ function App() {
               가능합니다.
             </h2>
             <p>
-              이러닝, 마이크로러닝, 플립러닝 등<br />
-              원하는 교육을 진행할 수 있습니다.<br />
+              이러닝, 마이크로러닝, 플립러닝 등<br className='pc_br' />
+              원하는 교육을 진행할 수 있습니다.<br className='pc_br' />
               심지어 개인화된 학습 경험을 제공하죠.
             </p>
           </div>
@@ -68,8 +68,8 @@ function App() {
 
         <div id='cont03'>
           <h2 data-aos="fade-up" data-aos-delay="300">
-            프로클래스와 만나세요.<br />
-            생성형 AI와 러닝저니로<br />
+            프로클래스와 만나세요. <br className='pc_br' />
+            생성형 AI와 러닝저니로 <br className='pc_br' />
             더욱 새로워진 학습 경험을.
           </h2>
           <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont03-mockup.png')} alt='프로클래스와 만나세요. 생성형 AI와 러닝저니로 더욱 새로워진 학습 경험을.' />
@@ -83,7 +83,7 @@ function App() {
             </div>
             <h2>개인 맞춤 학습 추천</h2>
             <p>
-              학습자별 관심사와 시청 기록을 기반으로<br />
+              학습자별 관심사와 시청 기록을 기반으로 <br className='pc_br' />
               커리어 목표 달성을 도울 학습 콘텐츠를 추천합니다.
             </p>
           </div>
@@ -122,15 +122,15 @@ function App() {
           <ul className='cardList'>
             <li>
               <h4 data-aos="fade-up" data-aos-delay="300">
-                <b>온라인, 오프라인, 외부 학습 등</b><br />
-                필수 클래스의 세부 정보를<br />
+                <b>온라인, 오프라인, 외부 학습 등</b> <br className='pc_br' />
+                필수 클래스의 세부 정보를 <br className='pc_br' />
                 한눈에 확인하고 편리하게 학습하세요.
               </h4>
               <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont04-card01.png')} alt='온라인, 오프라인, 외부 학습 등 필수 클래스의 세부 정보를 한눈에 확인하고 편리하게 학습하세요.' />
             </li>
             <li>
               <h4 data-aos="fade-up" data-aos-delay="300">
-                <b>번거롭게 검색할 필요없이</b><br />
+                <b>번거롭게 검색할 필요없이</b> <br className='pc_br' />
                 나에게 꼭 필요한 클래스를 추천 받으세요.
               </h4>
               <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont04-card02.png')} alt='번거롭게 검색할 필요없이 나에게 꼭 필요한 클래스를 추천 받으세요.' />
@@ -147,7 +147,7 @@ function App() {
               </div>
               <h2>생성형 AI로 최적의 학습 설계</h2>
               <p>
-                프로클래스의 학습 전문가 ‘프클AI’가<br />
+                프로클래스의 학습 전문가 ‘프클AI’가 <br className='pc_br' />
                 맞춤형 학습 여정 설계를 도와드려요.
               </p>
             </div>
@@ -158,10 +158,11 @@ function App() {
               <li>
                 <h5>STEP 1</h5>
                 <p>
-                  커리어 관련 궁금증이 있다면?<br />
+                  커리어 관련 궁금증이 있다면? <br className='pc_br' />
                   프클AI에게 무엇이든 물어보세요.
                 </p>
                 <div className='phone'>
+                  <img src={publicUrl('/image/phone.png')} alt='phone' />
                   <div>
                     <video src={publicUrl('/image/cont05-card01.mp4')} autoPlay muted loop></video>
                   </div>
@@ -170,10 +171,11 @@ function App() {
               <li>
                 <h5>STEP 2</h5>
                 <p>
-                  프클AI가 질문에 맞는 자세한 답변과<br />
+                  프클AI가 질문에 맞는 자세한 답변과 <br className='pc_br' />
                   학습 콘텐츠를 맞춤 추천해드려요.
                 </p>
                 <div className='phone'>
+                  <img src={publicUrl('/image/phone.png')} alt='phone' />
                   <div>
                     <video src={publicUrl('/image/cont05-card02.mp4')} autoPlay muted loop></video>
                   </div>
@@ -199,10 +201,11 @@ function App() {
               <li>
                 <img className='gift' src={publicUrl('/image/cont06-gift.png')} alt='퀴즈' />
                 <h4>
-                  <b>OX 퀴즈, 단어 맞추기 등 학습 내용 기반</b><br />
+                  <b>OX 퀴즈, 단어 맞추기 등 학습 내용 기반</b> <br className='pc_br' />
                   AI 자동생성 퀴즈를 풀어보세요.
                 </h4>
                 <div className='phone'>
+                  <img src={publicUrl('/image/phone.png')} alt='phone' />
                   <div>
                     <video src={publicUrl('/image/cont06-card01.mp4')} autoPlay muted loop></video>
                   </div>
@@ -210,7 +213,7 @@ function App() {
               </li>
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
-                  <b>학습 활동에 따라 보상(빈)을 얻고</b><br />
+                  <b>학습 활동에 따라 보상(빈)을 얻고</b> <br className='pc_br' />
                   리그도 참여할 수 있어요.
                 </h4>
                 <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont06-card02.png')} alt='보상' />
@@ -234,8 +237,8 @@ function App() {
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   <b>
-                    온라인, 오프라인, 외부 학습 등<br/>
-                    다양한 학습을 간편하게 즐기고<br/>
+                    온라인, 오프라인, 외부 학습 등 <br className='pc_br' />
+                    다양한 학습을 간편하게 즐기고 <br className='pc_br' />
                   </b>
                   나의 학습과정을 통합 관리할 수 있어요.
                 </h4>
@@ -244,8 +247,8 @@ function App() {
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   <b>
-                    스스로 학습 주기를 설정하며<br />
-                    학습 활동을 관리할 수 있어요.<br />
+                    스스로 학습 주기를 설정하며 <br className='pc_br' />
+                    학습 활동을 관리할 수 있어요. <br className='pc_br' />
                   </b>
                   매일 학습 목표를 달성해보세요!
                 </h4>
@@ -253,8 +256,8 @@ function App() {
               </li>
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
-                  <b>나의 학습 현황을 분석해보세요.</b><br />
-                  주간・월간 목표 달성률을 확인하고<br />
+                  <b>나의 학습 현황을 분석해보세요.</b> <br className='pc_br' />
+                  주간・월간 목표 달성률을 확인하고 <br className='pc_br' />
                   학습 키워드를 파악할 수 있어요.
                 </h4>
                 <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont07-card03.png')} alt='card' />
@@ -275,17 +278,16 @@ function App() {
             <ul className='chat'>
               <li data-aos="fade-up" data-aos-delay="300">
                 <img src={publicUrl('/image/cont08-emoji01.png')} alt='사람' />
-                <div>리더십에 꼭 필요한 역량이 뭐라고 생<br />각하시나요?</div>
+                <div>리더십에 꼭 필요한 역량이 뭐라고 생<br className='pc_br' />각하시나요?</div>
               </li>
               <li data-aos="fade-up" data-aos-delay="600">
                 <img src={publicUrl('/image/cont08-emoji02.png')} alt='사람' />
-                <div>팀이 나아가야할 명확한 목표를 제시<br />할 수 있어야 한다고 생각해요!</div>
+                <div>팀이 나아가야할 명확한 목표를 제시<br className='pc_br' />할 수 있어야 한다고 생각해요!</div>
               </li>
               <li data-aos="fade-up" data-aos-delay="900">
                 <div>
                   오! 저도 같은 생각이에요 🙌<br />
-                  리더십 관련해서 추천 해주실 만한<br />
-                  강의 없을까요?
+                  리더십 관련해서 추천 해주실 만한 <br className='pc_br' />강의 없을까요?
                 </div>
                 <img src={publicUrl('/image/cont08-emoji03.png')} alt='사람' />
               </li>
@@ -295,8 +297,8 @@ function App() {
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   <b>
-                    스터디를 통해 개인 역량 향상은 물론<br />
-                    조직의 업무 효율을 높일 수 있어요.<br />
+                    스터디를 통해 개인 역량 향상은 물론 <br className='pc_br' />
+                    조직의 업무 효율을 높일 수 있어요. <br className='pc_br' />
                   </b>
                   원하는 스터디를 직접 개설해보세요.
                 </h4>
@@ -305,8 +307,8 @@ function App() {
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   <b>
-                    커뮤니티는 커뮤니티 답게.<span>출시 예정</span><br />
-                    익명성이 보장된 공간에서<br />
+                    커뮤니티는 커뮤니티 답게.<span>출시 예정</span> &nbsp;&nbsp;<br className='pc_br' />
+                    익명성이 보장된 공간에서 <br className='pc_br' />
                   </b>
                   직무별, 주제별 대화를 나눠보세요.
                 </h4>
@@ -344,8 +346,8 @@ function App() {
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
                   <b>
-                    학습 목표 달성, 퀴즈 풀이, 프클AI 활용 등<br/>
-                    다양한 방식으로 ‘빈'을 획득해보세요.<br/>
+                    학습 목표 달성, 퀴즈 풀이, 프클AI 활용 등 <br className='pc_br' />
+                    다양한 방식으로 ‘빈'을 획득해보세요. <br className='pc_br' />
                   </b>
                   모으는 재미가 쏠쏠할 거예요.
                 </h4>
