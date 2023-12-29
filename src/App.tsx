@@ -10,6 +10,7 @@ import './index.css';
 import './style.scss';
 
 function App() {
+  const publicUrl = (path: string) => process.env.PUBLIC_URL + path;
 
   useEffect(() => {
     AOS.init();
@@ -20,7 +21,7 @@ function App() {
     <div id='wrap'>
       <div id='left'>
         <div>
-          <img src='/image/logo-symbol.png' alt='PROCLASS'/>
+          <img src={publicUrl('/image/logo-symbol.png')} alt='PROCLASS'/>
           <h1>
             임직원의 커리어를 <b>BASIC</b> 에서<br />
             <b>PRO</b> 버전으로 업그레이드 하세요.
@@ -31,17 +32,17 @@ function App() {
 
       <div id='right'>
         <header>
-          <img className='logo' src='/image/header-logo.png' alt='PROCLASS' />
+          <img className='logo' src={publicUrl('/image/header-logo.png')} alt='PROCLASS' />
         </header>
 
         <div id='cont01'>
           <div className='content'>
             <h2 data-aos="fade-up" data-aos-delay="300">커리어 성장을 위한</h2>
             <h2 data-aos="fade-up" data-aos-delay="700">교육의 모든 것</h2>
-            <img data-aos="fade-up" data-aos-delay="1100" className='logo' src='/image/logo.png' alt='PROCLASS' />
+            <img data-aos="fade-up" data-aos-delay="1100" className='logo' src={publicUrl('/image/logo.png')} alt='PROCLASS' />
           </div>
 
-          <img className='arrow' src='/image/arrow.png' alt='arrow' />
+          <img className='arrow' src={publicUrl('/image/arrow.png')} alt='arrow' />
         </div>
 
         <div id='cont02'>
@@ -71,13 +72,13 @@ function App() {
             생성형 AI와 러닝저니로<br />
             더욱 새로워진 학습 경험을.
           </h2>
-          <img data-aos="fade-up" data-aos-delay="700" src='/image/cont03-mockup.png' alt='프로클래스와 만나세요. 생성형 AI와 러닝저니로 더욱 새로워진 학습 경험을.' />
+          <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont03-mockup.png')} alt='프로클래스와 만나세요. 생성형 AI와 러닝저니로 더욱 새로워진 학습 경험을.' />
         </div>
 
         <div id='cont04'>
           <div className='titleBox'>
             <div>
-              <img src='/image/title-home.png' alt='home' />
+              <img src={publicUrl('/image/title-home.png')} alt='home' />
               <h4>홈・학습</h4>
             </div>
             <h2>개인 맞춤 학습 추천</h2>
@@ -88,7 +89,7 @@ function App() {
           </div>
 
           <div className='mockup'>
-            <img src='/image/cont04-mockup.png' alt='개인 맞춤 학습 추천' />
+            <img src={publicUrl('/image/cont04-mockup.png')} alt='개인 맞춤 학습 추천' />
             <Swiper
               direction={'vertical'}
               slidesPerView={'auto'}
@@ -101,19 +102,19 @@ function App() {
               className="cont04Swiper"
             >
               <SwiperSlide>
-                <img src='/image/cont04-screen1.png' alt='screen' />
+                <img src={publicUrl('/image/cont04-screen1.png')} alt='screen' />
               </SwiperSlide>
               <SwiperSlide>
-                <img src='/image/cont04-screen2.png' alt='screen' />
+                <img src={publicUrl('/image/cont04-screen2.png')} alt='screen' />
               </SwiperSlide>
               <SwiperSlide>
-                <img src='/image/cont04-screen3.png' alt='screen' />
+                <img src={publicUrl('/image/cont04-screen3.png')} alt='screen' />
               </SwiperSlide>
               <SwiperSlide>
-                <img src='/image/cont04-screen4.png' alt='screen' />
+                <img src={publicUrl('/image/cont04-screen4.png')} alt='screen' />
               </SwiperSlide>
               <SwiperSlide>
-                <img src='/image/cont04-screen5.png' alt='screen' />
+                <img src={publicUrl('/image/cont04-screen5.png')} alt='screen' />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -125,14 +126,14 @@ function App() {
                 필수 클래스의 세부 정보를<br />
                 한눈에 확인하고 편리하게 학습하세요.
               </h4>
-              <img data-aos="fade-up" data-aos-delay="700" src='/image/cont04-card01.png' alt='온라인, 오프라인, 외부 학습 등 필수 클래스의 세부 정보를 한눈에 확인하고 편리하게 학습하세요.' />
+              <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont04-card01.png')} alt='온라인, 오프라인, 외부 학습 등 필수 클래스의 세부 정보를 한눈에 확인하고 편리하게 학습하세요.' />
             </li>
             <li>
               <h4 data-aos="fade-up" data-aos-delay="300">
                 <b>번거롭게 검색할 필요없이</b><br />
                 나에게 꼭 필요한 클래스를 추천 받으세요.
               </h4>
-              <img data-aos="fade-up" data-aos-delay="700" src='/image/cont04-card02.png' alt='번거롭게 검색할 필요없이 나에게 꼭 필요한 클래스를 추천 받으세요.' />
+              <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont04-card02.png')} alt='번거롭게 검색할 필요없이 나에게 꼭 필요한 클래스를 추천 받으세요.' />
             </li>
           </ul>
         </div>
@@ -141,7 +142,7 @@ function App() {
           <div id='cont05'>
             <div className='titleBox'>
               <div>
-                <img src='/image/title-ai.png' alt='러닝저니' />
+                <img src={publicUrl('/image/title-ai.png')} alt='러닝저니' />
                 <h4>러닝저니</h4>
               </div>
               <h2>생성형 AI로 최적의 학습 설계</h2>
@@ -151,7 +152,7 @@ function App() {
               </p>
             </div>
 
-            <img className='mockup' src='/image/cont05-mockup.png' alt='프클AI' />
+            <img className='mockup' src={publicUrl('/image/cont05-mockup.png')} alt='프클AI' />
 
             <ul className='cardList'>
               <li>
@@ -162,7 +163,7 @@ function App() {
                 </p>
                 <div className='phone'>
                   <div>
-                    <video src='/image/cont05-card01.mp4' autoPlay muted loop></video>
+                    <video src={publicUrl('/image/cont05-card01.mp4')} autoPlay muted loop></video>
                   </div>
                 </div>
               </li>
@@ -174,7 +175,7 @@ function App() {
                 </p>
                 <div className='phone'>
                   <div>
-                    <video src='/image/cont05-card02.mp4' autoPlay muted loop></video>
+                    <video src={publicUrl('/image/cont05-card02.mp4')} autoPlay muted loop></video>
                   </div>
                 </div>
               </li>
@@ -184,7 +185,7 @@ function App() {
           <div id='cont06'>
             <div className='titleBox'>
               <div>
-                <img src='/image/title-game.png' alt='게이미피케이션' />
+                <img src={publicUrl('/image/title-game.png')} alt='게이미피케이션' />
                 <h4>게이미피케이션</h4>
               </div>
               <h2>생성형 AI 기반 게임 플레이</h2>
@@ -196,14 +197,14 @@ function App() {
 
             <ul className='cardList'>
               <li>
-                <img className='gift' src='/image/cont06-gift.png' alt='퀴즈' />
+                <img className='gift' src={publicUrl('/image/cont06-gift.png')} alt='퀴즈' />
                 <h4>
                   <b>OX 퀴즈, 단어 맞추기 등 학습 내용 기반</b><br />
                   AI 자동생성 퀴즈를 풀어보세요.
                 </h4>
                 <div className='phone'>
                   <div>
-                    <video src='/image/cont06-card01.mp4' autoPlay muted loop></video>
+                    <video src={publicUrl('/image/cont06-card01.mp4')} autoPlay muted loop></video>
                   </div>
                 </div>
               </li>
@@ -212,7 +213,7 @@ function App() {
                   <b>학습 활동에 따라 보상(빈)을 얻고</b><br />
                   리그도 참여할 수 있어요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont06-card02.png' alt='보상' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont06-card02.png')} alt='보상' />
               </li>
             </ul>
           </div>
@@ -222,7 +223,7 @@ function App() {
           <div id='cont07'>
             <div className='titleBox'>
               <div>
-                <img src='/image/title-book.png' alt='book' />
+                <img src={publicUrl('/image/title-book.png')} alt='book' />
                 <h4>다양한 학습 과정</h4>
               </div>
               <h2>성장을 위한 모든 콘텐츠</h2>
@@ -238,7 +239,7 @@ function App() {
                   </b>
                   나의 학습과정을 통합 관리할 수 있어요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont07-card01.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont07-card01.png')} alt='card' />
               </li>
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
@@ -248,7 +249,7 @@ function App() {
                   </b>
                   매일 학습 목표를 달성해보세요!
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont07-card02.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont07-card02.png')} alt='card' />
               </li>
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
@@ -256,7 +257,7 @@ function App() {
                   주간・월간 목표 달성률을 확인하고<br />
                   학습 키워드를 파악할 수 있어요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont07-card03.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont07-card03.png')} alt='card' />
               </li>
             </ul>
           </div>
@@ -264,7 +265,7 @@ function App() {
           <div id='cont08'>
             <div className='titleBox'>
               <div>
-                <img src='/image/title-community.png' alt='community' />
+                <img src={publicUrl('/image/title-community.png')} alt='community' />
                 <h4>커뮤니티</h4>
               </div>
               <h2>성장 시너지 강력한 소통 공간</h2>
@@ -273,11 +274,11 @@ function App() {
 
             <ul className='chat'>
               <li data-aos="fade-up" data-aos-delay="300">
-                <img src='/image/cont08-emoji01.png' alt='사람' />
+                <img src={publicUrl('/image/cont08-emoji01.png')} alt='사람' />
                 <div>리더십에 꼭 필요한 역량이 뭐라고 생<br />각하시나요?</div>
               </li>
               <li data-aos="fade-up" data-aos-delay="600">
-                <img src='/image/cont08-emoji02.png' alt='사람' />
+                <img src={publicUrl('/image/cont08-emoji02.png')} alt='사람' />
                 <div>팀이 나아가야할 명확한 목표를 제시<br />할 수 있어야 한다고 생각해요!</div>
               </li>
               <li data-aos="fade-up" data-aos-delay="900">
@@ -286,7 +287,7 @@ function App() {
                   리더십 관련해서 추천 해주실 만한<br />
                   강의 없을까요?
                 </div>
-                <img src='/image/cont08-emoji03.png' alt='사람' />
+                <img src={publicUrl('/image/cont08-emoji03.png')} alt='사람' />
               </li>
             </ul>
 
@@ -299,7 +300,7 @@ function App() {
                   </b>
                   원하는 스터디를 직접 개설해보세요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont08-card01.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont08-card01.png')} alt='card' />
               </li>
               <li>
                 <h4 data-aos="fade-up" data-aos-delay="300">
@@ -309,7 +310,7 @@ function App() {
                   </b>
                   직무별, 주제별 대화를 나눠보세요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont08-card02.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont08-card02.png')} alt='card' />
               </li>
             </ul>
           </div>
@@ -317,7 +318,7 @@ function App() {
           <div id='cont09'>
             <div className='titleBox'>
               <div>
-                <img src='/image/title-star.png' alt='star' />
+                <img src={publicUrl('/image/title-star.png')} alt='star' />
                 <h4>보상 체계</h4>
               </div>
               <h2>
@@ -348,7 +349,7 @@ function App() {
                   </b>
                   모으는 재미가 쏠쏠할 거예요.
                 </h4>
-                <img data-aos="fade-up" data-aos-delay="700" src='/image/cont09-card01.png' alt='card' />
+                <img data-aos="fade-up" data-aos-delay="700" src={publicUrl('/image/cont09-card01.png')} alt='card' />
               </li>
             </ul>
           </div>
@@ -356,7 +357,7 @@ function App() {
 
         <div id='cont10'>
           <h2>
-            <img src='/image/cont10-text.png' alt='임직원의 커리어를 BASIC에서 PRO 버전으로 업그레이드 하세요.' />
+            <img src={publicUrl('/image/cont10-text.png')} alt='임직원의 커리어를 BASIC에서 PRO 버전으로 업그레이드 하세요.' />
           </h2>
           <button>도입 문의</button>
         </div>
