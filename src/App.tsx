@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -8,9 +8,12 @@ import 'aos/dist/aos.css';
 import 'swiper/css';
 import './index.css';
 import './style.scss';
+import { publicUrl } from "./util";
+import {FormModal, FormSuccessModal} from "./components";
 
 function App() {
-  const publicUrl = (path: string) => process.env.PUBLIC_URL + path;
+  const [openFormModal, setOpenFormModal] = useState(false);
+  const [openSuccessModal, setOpenSuccessModal] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -26,7 +29,7 @@ function App() {
             임직원의 커리어를 <b>BASIC</b> 에서<br />
             <b>PRO</b> 버전으로 업그레이드 하세요.
           </h1>
-          <button>도입 문의</button>
+          <button onClick={() => setOpenFormModal(true)}>도입 문의</button>
         </div>
       </div>
 
@@ -361,10 +364,13 @@ function App() {
           <h2>
             <img src={publicUrl('/image/cont10-text.png')} alt='임직원의 커리어를 BASIC에서 PRO 버전으로 업그레이드 하세요.' />
           </h2>
-          <button>도입 문의</button>
+          <button onClick={() => setOpenFormModal(true)}>도입 문의</button>
         </div>
 
       </div>
+
+      {openFormModal && <FormModal setOpenModal={setOpenFormModal} setOpenSuccessModal={setOpenSuccessModal} />}
+      {openSuccessModal && <FormSuccessModal setOpenModal={setOpenSuccessModal} />}
     </div>
   );
 }
