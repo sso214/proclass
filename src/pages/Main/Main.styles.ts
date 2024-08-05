@@ -28,10 +28,12 @@ export const header = css`
     align-items: center;
     justify-content: space-between;
 
-    color: #DADADA;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
+    button {
+      color: #DADADA;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+    }
     
     svg {
       height: 36px;
@@ -109,7 +111,7 @@ export const section01 = css`
     line-height: 39px;
   }
 
-  a {
+  button {
     width: 306px;
     height: 99px;
     margin-top: 70px;

@@ -1,22 +1,33 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useDialog } from '@/common/hooks';
 import SVG_LOGO from '@/assets/logo.svg?react';
 import SVG_SYMBOL from '@/assets/symbol.svg?react';
 import SVG_LOGO2 from '@/assets/logo2.svg?react';
+import { AppDownloadDialog, FormDialog } from './components';
 import * as S from './Main.styles';
 
 export default function Main() {
+  const { onPresent } = useDialog();
+
+  const openAppDownloadDialog = () => onPresent(<AppDownloadDialog />);
+  const openFormDialog = () => onPresent(<FormDialog />);
+
   return (
     <main css={S.wrapper}>
       <header css={S.header}>
         <nav>
           <SVG_LOGO />
-          <a href='#' download>앱 다운로드</a>
+          <button type='button' onClick={openAppDownloadDialog}>앱 다운로드</button>
         </nav>
       </header>
 
       <div css={S.container}>
         <section css={S.section01}>
-          <article data-aos="fade-up">
+          <article data-aos="fade-zoom-in"
+                   data-aos-easing="ease-in-back"
+                   data-aos-delay="300"
+                   data-aos-offset="0"
+                   data-aos-duration="1000">
             <h1>
               몰입이 쉬워지는<br/>
               커리어 성장의 시작<br/>
@@ -26,7 +37,7 @@ export default function Main() {
               생성형AI와 러닝저니가 결합된 솔루션으로<br/>
               한계 없는 임직원 교육을 진행해보세요.
             </p>
-            <a href='#'>도입 문의</a>
+            <button type='button' onClick={openFormDialog}>도입 문의</button>
           </article>
         </section>
 
@@ -41,11 +52,11 @@ export default function Main() {
 
         <section css={S.section03}>
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up">
               <img src='/images/section03-title-symbol.png' alt='교육담당자의 고민'/>
               <h2 css={S.title}>교육담당자의 고민</h2>
             </div>
-            <ol className='worryList'>
+            <ol className='worryList' data-aos="fade-up" data-aos-delay="300">
               {[
                 {
                   backgroundColor: '#FFF4F3',
@@ -101,11 +112,11 @@ export default function Main() {
           </article>
 
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up">
               <SVG_SYMBOL/>
               <h2 css={S.title}>프로클래스가 필요한 이유</h2>
             </div>
-            <ol className='solutionList'>
+            <ol className='solutionList' data-aos="fade-up" data-aos-delay="300">
               {[
                 <>
                   월 구독 가격제로<br/>
@@ -147,7 +158,7 @@ export default function Main() {
 
         <section css={S.section05}>
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up">
               <span style={{backgroundColor: '#E3E9FF', color: '#5377FF'}}>Solution 1. 기업의 성장을 위해</span>
               <h2 css={S.title}>
                 시공간 제약 없이 다양한 교육 형태를 결합한<br/>
@@ -177,7 +188,7 @@ export default function Main() {
                   )
                 }
               ].map(({image, el}, index) => (
-                <li key={index}>
+                <li key={index} data-aos="fade-up" data-aos-delay={index === 1 ? 300 : 700}>
                   <img src={image} alt={image}/>
                   <p>{el}</p>
                 </li>
@@ -186,7 +197,7 @@ export default function Main() {
           </article>
 
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up" data-aos-delay="900">
               <span style={{backgroundColor: '#FFE6E3', color: '#FF7A68'}}>Solution 2. 개인의 성장을 위해</span>
               <h2 css={S.title}>
                 생성형 AI 적용으로 오직 개인을 위한<br/>
@@ -216,7 +227,7 @@ export default function Main() {
                   )
                 }
               ].map(({image, el}, index) => (
-                <li key={index}>
+                <li key={index} data-aos="fade-up" data-aos-delay={index === 1 ? 1200 : 1600}>
                   <img src={image} alt={image}/>
                   <p>{el}</p>
                 </li>
@@ -225,7 +236,7 @@ export default function Main() {
           </article>
 
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up" data-aos-delay="1800">
               <span style={{backgroundColor: '#EBE4FF', color: '#9777F3'}}>Solution 3. 자기주도적 성장을 위해</span>
               <h2 css={S.title}>
                 독려가 필요 없는 학습 몰입.<br/>
@@ -281,11 +292,11 @@ export default function Main() {
                   }
                 ]
               ].map((values, index) => (
-                <li key={index}>
+                <li key={index} data-aos="fade-up" data-aos-delay="2500">
                   {values.map(({image, title, text}, index) => (
                     <React.Fragment key={title}>
                       <div>
-                        <img src={image} alt={title}/>
+                        <img src={image} alt={title} data-aos="fade-up" data-aos-delay="2800"/>
                         <h5>{title}</h5>
                         <p>{text}</p>
                       </div>
@@ -306,14 +317,14 @@ export default function Main() {
 
         <section css={S.section06}>
           <article>
-            <div className='title'>
+            <div className='title' data-aos="fade-up" data-aos-delay="3100">
               <span>EVENT</span>
               <h2 css={S.title}>
                 베타 테스트 진행 중!<br/>
                 푸짐한 선물을 드려요.
               </h2>
             </div>
-            <ul className='giftList'>
+            <ul className='giftList' data-aos="fade-up" data-aos-delay="3500">
               {[
                 {
                   image: '/images/gift01.png',
@@ -353,7 +364,7 @@ export default function Main() {
                 </li>
               ))}
             </ul>
-            <ul className='guideList'>
+            <ul className='guideList' data-aos="fade-up" data-aos-delay="3900">
               <li>이벤트 상품은 당첨자 선정 후 익월 발송 예정이며, 당사 사정에 의해 상품 내용은 변동될 수 있습니다.</li>
               <li>상품 증정을 위해 앱 가입 정보를 정확히 입력해주시기 바랍니다.</li>
               <li>선착순 마감 등 당사 사정에 의해 이벤트는 조기 종료될 수 있습니다.</li>
