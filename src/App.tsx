@@ -1,6 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-
-import { ROUTE_LIST } from '@/common/routes/route-list';
+import { ROUTE_LIST } from '@/common/routes';
 
 function App() {
   const renderRouters = useRoutes(ROUTE_LIST);
