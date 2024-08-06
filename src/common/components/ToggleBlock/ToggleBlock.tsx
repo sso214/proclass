@@ -12,7 +12,7 @@ export default function ToggleBlock({ view, contents }: ToggleBlockProps) {
     <div css={S.wrapper}>
       <div css={S.view} className={open ? 'active' : ''}>
         <div>{view}</div>
-        <img src='/images/arrow.png' alt='toggle' onClick={() => setOpen((prevState) => !prevState)} />
+        <img src='/proclass/images/arrow.png' alt='toggle' onClick={() => setOpen((prevState) => !prevState)} />
       </div>
       {open && <div css={S.contents}>{contents}</div>}
     </div>

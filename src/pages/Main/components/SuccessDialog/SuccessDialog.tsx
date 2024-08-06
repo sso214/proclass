@@ -11,7 +11,7 @@ export default function SuccessDialog() {
       style={{ width: 800 }}
       contents={
         <div css={S.container}>
-          <img src='/images/form-success.png' alt='프로클래스 도입 문의 완료' />
+          <img src='/proclass/images/form-success.png' alt='프로클래스 도입 문의 완료' />
           <h2>프로클래스 도입 문의 완료</h2>
           <p>
             문의 내용이 정상적으로 접수됐습니다.

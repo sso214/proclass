@@ -9,16 +9,16 @@ export default function AppDownloadDialog() {
       contents={
         <ul css={S.appList}>
           <li>
-            <img src='/images/qr-ios.png' alt='App Store' />
+            <img src='/proclass/images/qr-ios.png' alt='App Store' />
             <a href='#' target='_blank' rel='noreferrer'>
-              <img src='/images/app-store.png' alt='app store' />
+              <img src='/proclass/images/app-store.png' alt='app store' />
               <p>App Store</p>
             </a>
           </li>
           <li>
-            <img src='/images/qr-google.png' alt='Google Play' />
+            <img src='/proclass/images/qr-google.png' alt='Google Play' />
             <a href='#' target='_blank' rel='noreferrer'>
-              <img src='/images/google-play.png' alt='google play' />
+              <img src='/proclass/images/google-play.png' alt='google play' />
               <p>Google Play</p>
             </a>
           </li>

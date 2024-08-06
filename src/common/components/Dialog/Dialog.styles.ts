@@ -30,7 +30,7 @@ export const closeButton = css`
   align-items: center;
   justify-content: center;
 
-  background: url('/images/close.png') no-repeat center;
+  background: url('/proclass/images/close.png') no-repeat center;
   background-size: 30px;
 
   @media (max-width: ${LAYOUT.mo.size}) {

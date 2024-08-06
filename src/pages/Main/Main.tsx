@@ -76,7 +76,7 @@ export default function Main() {
         <section css={S.section03}>
           <article>
             <div className='title' data-aos='fade-up'>
-              <img src='/images/section03-title-symbol.png' alt='교육담당자의 고민' />
+              <img src='/proclass/images/section03-title-symbol.png' alt='교육담당자의 고민' />
               <h2 css={S.title}>교육담당자의 고민</h2>
             </div>
             <ol className='worryList' data-aos='fade-up' data-aos-delay='300'>
@@ -85,7 +85,7 @@ export default function Main() {
                   backgroundColor: '#FFF4F3',
                   indexColor: '#FF9283',
                   iconColor: '#FFB0A9',
-                  image: '/images/worry01.png',
+                  image: '/proclass/images/worry01.png',
                   el: (
                     <>
                       임직원 교육을 위한
@@ -98,7 +98,7 @@ export default function Main() {
                   backgroundColor: '#F5F2FF',
                   indexColor: '#9075FF',
                   iconColor: '#C0ADFF',
-                  image: '/images/worry02.png',
+                  image: '/proclass/images/worry02.png',
                   el: (
                     <>
                       <span style={{ color: '#7140FF' }}>높은 인력 분산도로</span>
@@ -111,7 +111,7 @@ export default function Main() {
                   backgroundColor: '#ECF0FF',
                   indexColor: '#6891F9',
                   iconColor: '#A3B7FF',
-                  image: '/images/worry03.png',
+                  image: '/proclass/images/worry03.png',
                   el: (
                     <>
                       <span style={{ color: '#1D5CFF' }}>급변하는 경영환경에 적합한</span>
@@ -209,7 +209,7 @@ export default function Main() {
             <ol className='mockupList'>
               {[
                 {
-                  image: '/images/mockup01.png',
+                  image: '/proclass/images/mockup01.png',
                   el: (
                     <>
                       동영상, 카드뉴스, 아티클 등<br />
@@ -220,7 +220,7 @@ export default function Main() {
                   ),
                 },
                 {
-                  image: '/images/mockup02.png',
+                  image: '/proclass/images/mockup02.png',
                   el: (
                     <>
                       스터디 기능을 통해 멀리 떨어져 있는
@@ -253,7 +253,7 @@ export default function Main() {
             <ol className='mockupList'>
               {[
                 {
-                  image: '/images/mockup03.png',
+                  image: '/proclass/images/mockup03.png',
                   el: (
                     <>
                       <span className='pc'>
@@ -276,7 +276,7 @@ export default function Main() {
                   ),
                 },
                 {
-                  image: '/images/mockup04.png',
+                  image: '/proclass/images/mockup04.png',
                   el: (
                     <>
                       <span className='pc'>
@@ -319,7 +319,7 @@ export default function Main() {
               {[
                 [
                   {
-                    image: '/images/process01.png',
+                    image: '/proclass/images/process01.png',
                     title: '러닝저니 커스텀',
                     text: (
                       <>
@@ -330,7 +330,7 @@ export default function Main() {
                     ),
                   },
                   {
-                    image: '/images/process02.png',
+                    image: '/proclass/images/process02.png',
                     title: '러닝저니 리뷰',
                     text: (
                       <>
@@ -343,7 +343,7 @@ export default function Main() {
                 ],
                 [
                   {
-                    image: '/images/process03.png',
+                    image: '/proclass/images/process03.png',
                     title: '최대 1만 개 커리어 콘텐츠',
                     text: (
                       <>
@@ -356,7 +356,7 @@ export default function Main() {
                     ),
                   },
                   {
-                    image: '/images/process04.png',
+                    image: '/proclass/images/process04.png',
                     title: '콘텐츠 큐레이션',
                     text: (
                       <>
@@ -405,7 +405,7 @@ export default function Main() {
             <ul className='giftList' data-aos='fade-up' data-aos-delay='3500'>
               {[
                 {
-                  image: '/images/gift01.png',
+                  image: '/proclass/images/gift01.png',
                   title: '앱 다운로드 / 가입 시',
                   text: (
                     <>
@@ -416,7 +416,7 @@ export default function Main() {
                   ),
                 },
                 {
-                  image: '/images/gift02.png',
+                  image: '/proclass/images/gift02.png',
                   title: '도입 문의 시',
                   text: (
                     <>
@@ -427,7 +427,7 @@ export default function Main() {
                   ),
                 },
                 {
-                  image: '/images/gift03.png',
+                  image: '/proclass/images/gift03.png',
                   title: '도입 확정 시',
                   text: (
                     <>

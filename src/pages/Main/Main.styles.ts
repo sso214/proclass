@@ -128,7 +128,7 @@ export const section01 = css`
   position: relative;
   padding: 220px 0;
 
-  background: url('/images/section01-bg.jpg') no-repeat center;
+  background: url('/proclass/images/section01-bg.jpg') no-repeat center;
   background-size: cover;
   text-align: center;
 
