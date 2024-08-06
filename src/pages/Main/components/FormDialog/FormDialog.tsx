@@ -50,7 +50,12 @@ export default function FormDialog() {
     <Dialog
       style={{ width: 800 }}
       title='프로클래스 도입 문의'
-      subTitle='프로클래스와 관련하여 궁금한 것이 있다면 무엇이든 물어보세요.'
+      subTitle={
+        <>
+          프로클래스와 관련하여 궁금한 것이 있다면 <br className='mo' />
+          무엇이든 물어보세요.
+        </>
+      }
       contents={
         <div css={S.container}>
           <span>필수*</span>
@@ -128,7 +133,7 @@ export default function FormDialog() {
                                 key={v}
                                 name='education'
                                 defaultChecked={v === value}
-                                onChange={(e) => onChange(e.target.value)}
+                                onChange={() => onChange(v)}
                               >
                                 {v}
                               </Radio>

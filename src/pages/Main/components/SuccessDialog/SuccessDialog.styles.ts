@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { LAYOUT } from '@/common/constants';
 
 export const container = css`
   height: 600px;
@@ -45,47 +46,79 @@ export const container = css`
     font-weight: 600;
   }
 
-  ul {
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-  }
+  @media (max-width: ${LAYOUT.mo.size}) {
+    img {
+      height: 60px;
+    }
 
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
-  }
+    h2 {
+      margin-top: 4px;
+      font-size: 20px;
+      line-height: 30px;
+    }
 
-  img {
-    height: 130px;
-  }
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 24px;
+    }
 
-  a {
-    height: 50px;
-    padding: 0 14px;
+    button {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
+      margin-top: 0;
+      width: 90%;
+      height: 55px;
 
-    background-color: #41424e;
-    border-radius: 10px;
+      border-radius: 16px;
+      font-size: 18px;
+    }
 
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-  }
+    ul {
+      margin-top: 72px;
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+    }
 
-  a img {
-    height: 24px;
-  }
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+    }
 
-  p {
-    line-height: 30px;
+    img {
+      height: 130px;
+    }
+
+    a {
+      height: 50px;
+      padding: 0 14px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+
+      background-color: #41424e;
+      border-radius: 10px;
+
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    a img {
+      height: 24px;
+    }
+
+    p {
+      line-height: 30px;
+    }
   }
 `;

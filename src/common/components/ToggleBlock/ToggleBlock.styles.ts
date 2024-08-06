@@ -1,6 +1,5 @@
 import { css } from '@emotion/react';
-
-export const wrapper = css``;
+import { LAYOUT } from '@/common/constants';
 
 export const view = css`
   display: flex;
@@ -48,5 +47,10 @@ export const contents = css`
     font-size: 11px;
     font-weight: 400;
     line-height: 17px;
+  }
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    margin-top: 10px;
+    padding: 12px 13px;
   }
 `;

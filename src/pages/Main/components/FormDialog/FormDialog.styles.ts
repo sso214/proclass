@@ -1,7 +1,10 @@
 import { css } from '@emotion/react';
+import { LAYOUT } from '@/common/constants';
 
 export const container = css`
-  width: 490px;
+  position: relative;
+  width: 95%;
+  max-width: 490px;
   margin: 17px 0 15px;
 
   & > span {
@@ -12,6 +15,16 @@ export const container = css`
     font-size: 12px;
     font-weight: 400;
     text-align: right;
+  }
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    margin: 10px 0;
+
+    & > span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 `;
 
@@ -68,6 +81,32 @@ export const table = css`
     resize: none;
     padding: 15px;
   }
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    margin-top: 0;
+
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+    th,
+    td {
+      width: 100%;
+      padding: 8px 0 20px;
+    }
+
+    th {
+      padding: 0;
+    }
+
+    .radioGroup {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      row-gap: 8px;
+      column-gap: 20px;
+    }
+  }
 `;
 
 export const terms = css`
@@ -75,6 +114,9 @@ export const terms = css`
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
 
   span {
     color: #ff5a5a;
@@ -95,4 +137,12 @@ export const submit = css`
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    width: 100%;
+    height: 55px;
+
+    border-radius: 16px;
+    font-size: 18px;
+  }
 `;

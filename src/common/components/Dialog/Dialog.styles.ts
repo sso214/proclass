@@ -5,6 +5,7 @@ import { LAYOUT } from '@/common/constants/style';
 export const wrapper = css`
   position: relative;
   z-index: 999;
+  max-height: 90%;
 
   display: flex;
   flex-direction: column;
@@ -93,6 +94,10 @@ export const container = css`
   align-items: center;
   justify-content: flex-start;
   flex: 1;
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    padding: 0 5%;
+  }
 `;
 
 export const footer = css`
@@ -102,4 +107,8 @@ export const footer = css`
   align-items: center;
   justify-content: center;
   flex: none;
+
+  @media (max-width: ${LAYOUT.mo.size}) {
+    padding: 15px 5% 30px;
+  }
 `;
