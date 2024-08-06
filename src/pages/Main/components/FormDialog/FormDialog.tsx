@@ -36,8 +36,8 @@ export default function FormDialog() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       education: '',
-      terms01: 'false',
-      terms02: 'false',
+      terms01: 'false' as any,
+      terms02: 'false' as any,
     },
   });
 
@@ -119,20 +119,22 @@ export default function FormDialog() {
                     <Controller
                       name='education'
                       control={control}
-                      render={({ field: { ref, name: fieldName, onChange, onBlur, value } }) => {
-                        return ['이러닝(법정의무교육)', '마이크로러닝(지식 콘텐츠)', '모두'].map((v, index) => (
-                          <Radio
-                            ref={ref}
-                            key={v}
-                            name={fieldName}
-                            defaultChecked={v === value}
-                            onChange={onChange}
-                            onBlur={onBlur}
-                            {...register('education')}
-                          >
-                            {v}
-                          </Radio>
-                        ));
+                      render={({ field: { ref, onChange, value } }) => {
+                        return (
+                          <>
+                            {['이러닝(법정의무교육)', '마이크로러닝(지식 콘텐츠)', '모두'].map((v) => (
+                              <Radio
+                                ref={ref}
+                                key={v}
+                                name='education'
+                                defaultChecked={v === value}
+                                onChange={(e) => onChange(e.target.value)}
+                              >
+                                {v}
+                              </Radio>
+                            ))}
+                          </>
+                        );
                       }}
                     />
                   </div>
