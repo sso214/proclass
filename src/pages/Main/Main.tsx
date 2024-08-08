@@ -19,9 +19,12 @@ export default function Main() {
       <header css={S.header}>
         <nav>
           <SVG_LOGO />
-          <button type='button' onClick={openAppDownloadDialog}>
+          <button className='pc' type='button' onClick={openAppDownloadDialog}>
             앱 다운로드
           </button>
+          <a className='mo' href='#' target='_blank' rel='noopener noreferrer'>
+            앱 다운로드
+          </a>
         </nav>
       </header>
 
@@ -34,24 +37,15 @@ export default function Main() {
             data-aos-offset='0'
             data-aos-duration='1000'
           >
-            <h1 className='pc'>
-              몰입이 쉬워지는
-              <br />
-              커리어 성장의 시작
-              <br />
-              프로클래스
-            </h1>
-            <h1 className='mo'>
-              몰입이 쉬워지는
-              <br />
-              커리어 성장 여정
+            <h1>
+              커리어 내비게이션
               <br />
               프로클래스
             </h1>
             <p>
-              생성형AI와 러닝저니가 결합된 솔루션으로
+              생성형 AI와 러닝저니가 결합된 솔루션으로
               <br />
-              한계 없는 임직원 교육을 진행해보세요.
+              임직원을 위한 최적의 성장 경로를 안내합니다.
             </p>
             <button type='button' onClick={openFormDialog}>
               도입 문의
@@ -172,11 +166,8 @@ export default function Main() {
                 </>,
               ].map((el, index) => (
                 <li key={index}>
-                  <div>
-                    <span>0{index + 1}</span>
-                    <p>{el}</p>
-                  </div>
-                  {index === 0 && <p className='guide'>📚 지금 도입하면 법정필수교육 무료 제공!</p>}
+                  <span>0{index + 1}</span>
+                  <p>{el}</p>
                 </li>
               ))}
             </ol>
@@ -186,10 +177,11 @@ export default function Main() {
         <section css={S.section04}>
           <article>
             <h3>
-              프로클래스와 만나세요.
+              생성형 AI와 <br className='mo' />
+              러닝저니를 통해
               <br />
-              생성형 AI와 러닝저니로 <br className='mo' />
-              더욱 새로워진 성장 경험을.
+              성장 경로 이탈을 <br className='mo' />
+              방지해보세요.
             </h3>
           </article>
         </section>
@@ -369,11 +361,11 @@ export default function Main() {
                   },
                 ],
               ].map((values, index) => (
-                <li key={index} data-aos='fade-up' data-aos-delay='2500'>
+                <li key={index} data-aos='fade-up' data-aos-delay='2000'>
                   {values.map(({ image, title, text }, index) => (
                     <React.Fragment key={title}>
                       <div>
-                        <img src={image} alt={title} data-aos='fade-up' data-aos-delay='2800' />
+                        <img src={image} alt={title} data-aos='fade-up' data-aos-delay='2200' />
                         <h5>{title}</h5>
                         <p>{text}</p>
                       </div>
@@ -431,9 +423,9 @@ export default function Main() {
                   title: '도입 확정 시',
                   text: (
                     <>
-                      법정필수교육
+                      법정필수교육 제공
                       <br />
-                      무료 제공
+                      (일부 고객사에 한함)
                     </>
                   ),
                 },
@@ -456,17 +448,20 @@ export default function Main() {
         <section css={S.section07}>
           <article>
             <h2 css={S.title}>
-              지금 바로
+              프로클래스와 함께 떠날
               <br />
-              프로클래스에 빠져보세요.
+              성장의 첫 여정.
             </h2>
             <div>
               <button type='button' onClick={openFormDialog}>
                 도입 문의
               </button>
-              <button type='button' onClick={openAppDownloadDialog}>
+              <button className='pc' type='button' onClick={openAppDownloadDialog}>
                 앱 다운로드
               </button>
+              <a className='mo' href='#' target='_blank' rel='noopener noreferrer'>
+                앱 다운로드
+              </a>
             </div>
           </article>
         </section>

@@ -63,6 +63,7 @@ export const header = css`
     height: 36px;
   }
 
+  a,
   button {
     color: #dadada;
     font-size: 20px;
@@ -85,6 +86,7 @@ export const header = css`
       height: 32px;
     }
 
+    a.mo,
     button {
       height: 40px;
       padding: 0 14px;
@@ -344,9 +346,6 @@ export const section03 = css`
     li {
       position: relative;
       width: 310px;
-    }
-
-    li > div {
       padding: 37px 0;
 
       background-color: #f5f5f5;
@@ -375,42 +374,6 @@ export const section03 = css`
         font-size: 24px;
         font-weight: 600;
         line-height: 34px;
-      }
-    }
-
-    .guide {
-      position: relative;
-
-      width: max-content;
-      height: 55px;
-      padding: 0 17px 0 15px;
-      margin-top: 37px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: #ecf6ff;
-      border-radius: 10px;
-
-      color: #1d5cff;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 24px;
-
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        margin-top: -15px;
-        left: 45%;
-        transform: translate(-50%);
-
-        width: 0;
-        height: 0;
-        border-bottom: calc(10px * 1.732) solid #ecf6ff;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
       }
     }
   }
@@ -466,21 +429,12 @@ export const section03 = css`
       justify-content: center;
       row-gap: 40px;
 
-      li > div {
+      li {
         padding: 37px 0 49px;
 
         p {
           font-size: 22px;
           line-height: 31px;
-        }
-      }
-
-      .guide {
-        margin-top: 34px;
-        font-size: 17px;
-
-        &:after {
-          left: 50%;
         }
       }
     }
@@ -552,6 +506,7 @@ export const section05 = css`
     row-gap: 100px;
 
     li {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -583,6 +538,11 @@ export const section05 = css`
     }
 
     span {
+      position: absolute;
+      top: 85px;
+      left: 50%;
+      transform: translateX(-50%);
+
       display: flex;
       align-items: center;
       column-gap: 40px;
@@ -673,6 +633,7 @@ export const section05 = css`
       }
 
       span {
+        position: initial;
         flex-direction: column;
         justify-content: center;
         column-gap: 0;
@@ -718,6 +679,11 @@ export const section06 = css`
   }
 
   .giftList {
+    position: relative;
+    left: -10px;
+    max-width: 946px;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -778,6 +744,7 @@ export const section06 = css`
     }
 
     .giftList {
+      position: initial;
       flex-direction: column;
       justify-content: center;
       row-gap: 50px;
@@ -828,6 +795,7 @@ export const section07 = css`
     column-gap: 28px;
   }
 
+  a,
   button {
     height: 100px;
     padding: 0 63px;
@@ -857,7 +825,9 @@ export const section07 = css`
       column-gap: 17px;
     }
 
+    a.mo,
     button {
+      display: flex;
       height: 64px;
       padding: 0 38px;
 
